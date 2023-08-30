@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +13,14 @@
   <header>
     <h1>Curriculum Vitae</h1>
   </header>
-  <section id="personal-info">
-    <!-- Informazioni personali qui -->
+  <section id="informazioni personali">
   </section>
-  <section id="experience">
-    <!-- Esperienza lavorativa qui -->
+  <section id="esperienze">
   </section>
-  <section id="education">
-    <!-- Istruzione qui -->
+  <section id="scuola">
   </section>
   <section id="skills">
-    <!-- Competenze qui -->
   </section>
-  <script src="script.js"></script>
+  <script src=".\js\script.js"></script>
 </body>
 </html>
