@@ -1,32 +1,39 @@
 // Esempio di dati
 const personalInfo = {
-    name: "Mario Rossi",
-    email: "mario@email.com",
-    phone: "123-456-7890",
+    name: "Alessandro Lamattina La Rocca",
+    email: "lamattina_alessandro@hotmail.it",
+    email2: "lamattinalessandro@gmail.com",
+    phone: "+39 3485962997",
   };
   
   const experiences = [
     {
-      title: "Tecnico di supporto software hardware",
-      company: "Goldbet srl",
-      year: " dal 2015 - 2018",
-      description: "Lavoro presso un'azienda succorsale di Goldbet srl.\n\
-                    Alcune delle mie mansioni erano:\n\
-                        \u00b7\tGestione attrezzatura per l'aperture nuovi negozi;\n\
-                        \u00b7\tAssistenza all'acquisto di attrezzatura;\n\
-                        \u00b7\tManutenzione computer;\n\
-                        \u00b7\tGestione software;\n\
-                        \u00b7\tGestione stampanti.\n",
-      
-      title: "Tecnico di supporto software hardware",
-      company: "Tech Company",
-      year: "2020 - Present",
-      description: "Developed user interfaces for web applications...",
-      
-      title: "Tecnico di supporto software hardware",
-      company: "Tech Company",
-      year: "2020 - Present",
-      description: "Developed user interfaces for web applications...",
+        title: "Tecnico di supporto software hardware",
+        company: "Goldbet srl",
+        year: " dal 2015 - 2018",
+        description: "Lavoro presso un'azienda succorsale di Goldbet srl.\n\
+                    Alcune delle mie mansioni erano:\n",
+        tasks:["manutenzione di computer;","gestione dei telefoni aziendali;","gestione software aziendali;",
+                    "gestione ticket tramite servicenow;","creazione piccoli tools per aggevolare il lavoro;",
+                    "riparazioni pc;","rapporto diretto con gli utenti;","Coordinamento di lavoro con team di altre funzioni."],},
+    {
+        title: "Tecnico di supporto software hardware",
+        company: "Stanleybet Malta srl",
+        year: "2018 - 2022",
+        description: "Lavoro presso un'azienda succorsale di Goldbet srl.\n\
+                    Alcune delle mie mansioni erano:",
+        tasks:["manutenzione di computer;","gestione dei telefoni aziendali;","gestione software aziendali;",
+                    "gestione ticket tramite servicenow;","creazione piccoli tools per aggevolare il lavoro;",
+                    "riparazioni pc;","rapporto diretto con gli utenti;","Coordinamento di lavoro con team di altre funzioni."],},
+    {   
+        title: "Tecnico di supporto software hardware",
+        company: "Elmec",
+        year: "2022 - Attualmente in occupazione",
+        description: "Sono assunto da Elmec per lavorare come specialista del supporto tecnico per Deloitte Italy spa. \n\
+                    Tra le mie mansione ci sono: \n",
+        tasks:["Manutenzione di computer;","Gestione dei telefoni aziendali;","Gestione software aziendali;",
+                "Gestione ticket tramite servicenow;","Creazione piccoli tools per aggevolare il lavoro;",
+                "Riparazioni pc;","Rapporto diretto con gli utenti;","Coordinamento di lavoro con team di altre funzioni."]
     },
     // Altre esperienze lavorative
   ];
@@ -40,31 +47,35 @@ const personalInfo = {
     // Altra istruzione
   ];
   
-  const skills = ["JavaScript", "HTML", "CSS", "React", "Problem Solving", "Communication"];
+  const skills = ["Python","JavaScript", "HTML", "CSS", "Problem Solving", "Communicazione"];
   
   // Popola le sezioni con i dati
-  document.getElementById("personal-info").innerHTML = `
+  document.getElementById("informazioni_personali").innerHTML = `
     <h2>${personalInfo.name}</h2>
     <p>Email: ${personalInfo.email}</p>
+    <p>Email: ${personalInfo.email2}</p>
     <p>Phone: ${personalInfo.phone}</p>
   `;
   
   // Popola le sezioni di esperienza lavorativa
-  const experienceSection = document.getElementById("experience");
+  const experienceSection = document.getElementById("esperienze");
   experiences.forEach(experience => {
-    const experienceItem = document.createElement("div");
-    experienceItem.innerHTML = `
-      <h3>${experience.title}</h3>
-      <p>${experience.company} | ${experience.year}</p>
-      <p>${experience.description}</p>
-    `;
-    experienceSection.appendChild(experienceItem);
+      const experienceItem = document.createElement("div");
+      const tasksList = experience.tasks.map(task => `<li>${task}</li>`).join(""); // Creazione della lista delle mansioni
+      experienceItem.innerHTML = `
+          <h3>${experience.title}</h3>
+          <p>${experience.company} | ${experience.year}</p>
+          <p>${experience.description}</p>
+          <ul>${tasksList}</ul>
+      `;
+      experienceSection.appendChild(experienceItem);
   });
-  
-  // Popola la sezione di istruzione
-  // Simile al metodo usato per popolare l'esperienza lavorativa
-  
-  // Popola la sezione di competenze
+  document.getElementById("scuola").innerHTML = `
+  <h2>${education.degree}</h2>
+  <p>School: ${education.school}</p>
+  <p>year: ${education.year}</p>
+`;
+
   const skillsSection = document.getElementById("skills");
   const skillsList = document.createElement("ul");
   skills.forEach(skill => {
