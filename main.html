@@ -7,17 +7,54 @@
   <title>Curriculum Vitae</title>
 </head>
 <body>
-  <header>
-    <h1>Curriculum Vitae</h1>
+  <div class="menu-btn" id="menuBtn">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+<nav class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Esperienza con OpenCv</a></li>
+        <li><a href="#">Esperienza con Conversioni dati PDf-Excel</a></li>
+        <li><a href="#">Software per l'invio massivo di mail</a></li>
+        <li><a href=".\file\curricula.pdf" download="curricula.pdf">Curricula</a></li>
+        <li><a href="#informazioni_personali">Informazioni personali</a></li>
+        <li><a href="#esperienze">Esperienza lavorativa</a></li>
+        <li><a href="#competenze">Competenze</a></li>
+    </ul>
+</nav>
+  <header class="fixed-header" id="myHeader">
+    <nav>
+      <ul class="nav-list">
+        <li><a href=".\file\curricula.pdf" download="curricula.pdf">Curricula</a></li>
+        <li><a href="#informazioni_personali">Informazioni personali</a></li>
+        <li><a href="#esperienze">Esperienza lavorativa</a></li>
+        <li><a href="#competenze">Competenze</a></li>
+      </ul>
+    </nav>
   </header>
-  <section id="informazioni_personali">
+    <div class="name" id="name">
+      <h1>Benvenuti nel mio Curricula digitale</h1>
+    </div>
+    <button id="back-to-top-button">
+      <div class="arrow-up"></div>
+  </button>
+  <section id="informazioni_personali" style="align-items: right;">
   </section>
-  <section id="esperienze">
+  <section id="esperienze" >
+    <h1 style="text-align: center;">Esperienze</h1>
+    <div id="experience-carousel" class="carousel">
+    </div>
+    <div id="position-indicator" class="position-indicators">
+    </div>
   </section>
   <section id="scuola">
   </section>
-  <section id="skills">
+  <section id="competenze">
+    <h1 style="text-align: center;">Competenze</h1>
   </section>
+
   <script src=".\js\script.js"></script>
 </body>
 </html>
