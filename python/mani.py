@@ -1,4 +1,4 @@
-
+import cv2
 cap = cv2.VideoCapture(0)  # 0 indica la telecamera predefinita (solitamente la webcam integrata)
 
 # Controlla se la telecamera è stata aperta con successo
