@@ -1,7 +1,4 @@
-import os
-import cv2
-import mediapipe as mp
-from datetime import datetime
+
 
 # Inizializza il modulo MediaPipe per il rilevamento delle mani
 mp_hands = mp.solutions.hands
