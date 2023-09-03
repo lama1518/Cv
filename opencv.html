@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esempio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="risultato"></div>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '/api/miofilepython',  // L'URL del tuo endpoint Python
+                method: 'GET',
+                success: function (data) {
+                    $('#risultato').text(data);  // Inserisce il risultato nella pagina HTML
+                }
+            });
+        });
+    </script>
+</body>
+</html>
