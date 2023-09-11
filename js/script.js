@@ -14,7 +14,7 @@ const personalInfo = {
     },
   ];
   const skills = ["Conoscenza linguaggio Python,JavaScript,HTML,CSS,C++", 
-                  "Problem Solving", "Communicazione", "Lavoro in Team",
+                  "Problem Solving", "Comunicazione", "Lavoro in Team",
                   "Padronanza del Pacchetto Office", "Padronanza nell'uso di Windows" ];
 const info_pers =document.getElementById("informazioni_personali");
 info_pers.innerHTML = `<div><img src=".\\file\\profilo.jpg"></div><div>
