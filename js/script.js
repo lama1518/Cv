@@ -51,6 +51,7 @@ window.addEventListener("scroll", () => {
       backToTopButton.style.display = "none";
   }
 });
+
 const home_big = document.getElementById("home");
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;

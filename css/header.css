@@ -22,6 +22,10 @@ header {
     color: #fff;
     font-family: "Montserrat", sans-serif;
   }
+  a {
+    color: inherit; /* Mantieni il colore predefinito del testo */
+    text-decoration: none; /* Rimuovi la sottolineatura */
+  }
   header button {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
