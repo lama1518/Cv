@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="it"><head>
   <meta charset="UTF-8">
     <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
     <meta name="apple-mobile-web-app-title" content="CodePen">
@@ -20,6 +20,7 @@
     <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6d8bf8b4b479137260842506acbb12717dace0823c023e08b96360e60b0840d9.js"></script>
     <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
     <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
     <script>
       window.console = window.console || function(t) {};
     </script>  
@@ -27,8 +28,8 @@
 
 <body translate="no">
   <header class="open">
-    <div class="triangle left"><h1>CIAO</h1></div>
-    <div class="triangle right"><h1>This is a title</h1></div>
+    <div class="triangle left"><h1>Il mio CV</h1></div>
+    <div class="triangle right"><h1>Il mio CV</h1></div>
     <button class="menu_laterale"></button>
   </header>
 
@@ -38,13 +39,14 @@
       <li>Informazioni personali</li>
       <li>Esperienza lavorativa</li>
       <li>Competenze</li>
-      <li>Progetti in Python</li>
+      <li><a href="python.html">Progetti in Python</a></li>
+      <li><a href="./file/alessandro_lamattina.pdf">Cv in versione pdf</a></li>
     </ul>
     <div id="nav-close"><i class="fas fa-times"></i></div>
   </nav>
 
   <content>
-    <section id ="home"style="font-size: 40px;">Benvenuti nel mio CV</section>
+    <section id ="home" style="font-size: 40px;">Benvenuti nel mio CV</section>
     <section id="informazioni_personali"><h1>Informazioni Personali</h1></section>
     <section id="esperienze">    
       <div class="carousel"><h1 style="text-align: center;">Esperienze</h1>
@@ -136,13 +138,13 @@
       </div>
     </section>
     <section id="competenze"></section>
-    <section id="python">Progetti in Python</section>
+     <section id="python"><a href="python.html"></a><h1>Aprire il menu per i progetti in Python</h1></a></section>
+     
   </content>
+
   <button class="back-to-top-button" id="back-to-top-button">
     <div class="arrow-up"></div>
   </button>
-
-
   <script src="./js/script.js"></script>
   <script src="./js/carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
