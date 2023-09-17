@@ -3,11 +3,13 @@ function toggleNav(){
     if($("nav").is(":visible")){
       $("nav").fadeOut();
       $("button").removeClass("menu");
+      $("content").css('display', 'block');
     }
     else{
       $("button").addClass("menu");
       $("nav").fadeIn().css('display', 'flex');
-      $("button.back-to-top-button").css('display', 'none')
+      $("button.back-to-top-button").css('display', 'none');
+      $("content").css('display', 'none')    
     }
   }
 

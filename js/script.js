@@ -65,3 +65,9 @@ window.addEventListener("scroll", () => {
     home_big.style.whiteSpace = "nowrap";
   }
 });
+
+const pythonButton = document.getElementById("python-button");
+pythonButton.addEventListener("click", () => {
+  const targetUrl = "./python.html";
+  window.location.href = targetUrl;
+});
