@@ -44,9 +44,45 @@
   
     <content>
       <section id ="home" style="font-size: 40px;">Software Python</section>
-      <section id="mani" style="margin-top:20% "><h1>Tracciamento Mani</h1></section>
-      <section id="mailsender"><h1>Invio mail prendendo 2 liste</h1></section>
-      <section id="pdftoexcel"><h1>Conversione rapida di pdf di grosse dimensioni</h1></section>
+      <section id="mani" style="margin-top: 20%; flex-direction: column;">
+        <h1>Tracciamento Mani</h1>
+        <div>
+          <video controls width="640" height="360">
+            <source src="./file/TrackerMani.mp4" type="video/mp4">
+            Il tuo browser non supporta la riproduzione di video.
+          </video>
+          <video controls width="640" height="360">
+            <source src="./file/CambioVoltoConMani.mp4" type="video/mp4">
+            Il tuo browser non supporta la riproduzione di video.
+          </video>
+        </div>
+      </section>
+      
+      <section id="mailsender" style="flex-direction: column; margin: 5%;">
+        <h1>MailSender</h1>
+        <p>Questo software prende 2 liste di persone inviando nella sezione 'to:' il primo elemento della prima lista<br> 
+           mentre gli altri elementi li inserisce nella sezione 'cc:'.<br>
+           Dalla seconda lista prende le persone che devono, per necessità di progetto, essere in copia conoscenza.<br>
+           Infine invia la mail con eventuali allegati.<br>
+           Presente una sezione di "Preview" per vedere i nomi delle persone e prensente il segnalatore di parole sbagliate.<br> 
+          <a href="https://github.com/AlessandroLamattina/MailGroup" style="position: relative;">Clicca qui per il progetto GitHub</a></p>
+
+           <video controls width="640" height="360">
+            <source src="./file/MailSender.mp4" type="video/mp4">
+            Il tuo browser non supporta la riproduzione di video.
+          </video>
+      </section>
+      <section id="pdftoexcel" style="flex-direction: column; margin: 5%;">
+        <h1>Conversione pdf in excel</h1>
+          <p>Questo script serve per estrarre i dati da dei file pdf e portarli in excel.<br>
+             La conversione cambia in base alla società a cui fa riferimento il libro giornale.<br>
+             In alcuni casi è stato possibile usare un sistema di multiprocessing per poter analizzare contemporaneamente più file.</p>
+            <video controls width="640" height="360">
+              <source src="./file/lgconverter.mp4" type="video/mp4">
+                Il tuo browser non supporta la riproduzione di video.
+            </video>
+            <img src ="file/Risultato conversione.png">
+      </section>
     </content>
     <button class="back-to-top-button" id="back-to-top-button">
       <div class="arrow-up"></div>
