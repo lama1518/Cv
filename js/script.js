@@ -53,18 +53,21 @@ window.addEventListener("scroll", () => {
 });
 
 const home_big = document.getElementById("home");
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  const fontSize = 40 + scrollPosition * 8 + "px"; 
-  if (parseFloat(fontSize) >= 10000) {
-    home_big.style.fontSize = "1000px"; 
-    home_big.style.marginTop = "100px";
-  } else if (parseFloat(fontSize) < 10000){
-    home_big.style.fontSize = fontSize;
-    home_big.style.marginTop = scrollPosition / 10 + "px";
-    home_big.style.whiteSpace = "nowrap";
-  }
-});
+if (window.innerWidth >= 1000) {
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const fontSize = 40 + scrollPosition * 8 + "px";
+    
+    if (parseFloat(fontSize) >= 10000) {
+      home_big.style.fontSize = "1000px";
+      home_big.style.marginTop = "100px";
+    } else if (parseFloat(fontSize) < 10000) {
+      home_big.style.fontSize = fontSize;
+      home_big.style.marginTop = scrollPosition / 10 + "px";
+      home_big.style.whiteSpace = "nowrap";
+    }
+  });
+}
 
 const pythonButton = document.getElementById("python-button");
 pythonButton.addEventListener("click", () => {
