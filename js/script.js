@@ -13,9 +13,7 @@ const personalInfo = {
       year: "2015 - 2019",
     },
   ];
-  const skills = ["Conoscenza linguaggio Python,JavaScript,HTML,CSS,C++", 
-                  "Problem Solving", "Comunicazione", "Lavoro in Team",
-                  "Padronanza del Pacchetto Office", "Padronanza nell'uso di Windows" ];
+  const skills = [];
 const info_pers =document.getElementById("informazioni_personali");
 info_pers.innerHTML = `<div><img src=".\\file\\profilo.jpg"></div><div>
       <h2>${personalInfo.name}</h2>
@@ -26,7 +24,7 @@ info_pers.innerHTML = `<div><img src=".\\file\\profilo.jpg"></div><div>
 
 const skillsSection = document.getElementById("competenze");
 const skillsTitle= document.createElement("h1")
-skillsTitle.textContent="Competenze";
+skillsTitle.textContent="Certificati";
 
 const skillsList = document.createElement("ul");
 skills.forEach(skill => {
