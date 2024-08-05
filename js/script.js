@@ -24,7 +24,7 @@ info_pers.innerHTML = `<div><img src=".\\file\\profilo.jpg"></div><div>
 
 const skillsSection = document.getElementById("competenze");
 const skillsTitle= document.createElement("h1")
-skillsTitle.textContent="Certificati";
+
 
 const skillsList = document.createElement("ul");
 skills.forEach(skill => {
@@ -70,5 +70,10 @@ if (window.innerWidth >= 1000) {
 const pythonButton = document.getElementById("python-button");
 pythonButton.addEventListener("click", () => {
   const targetUrl = "./python.html";
+  window.location.href = targetUrl;
+});
+const certificatiButton = document.getElementById("certificate-button");
+certificatiButton.addEventListener("click", () => {
+  const targetUrl = "./certificati.html";
   window.location.href = targetUrl;
 });
